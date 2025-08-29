@@ -13,8 +13,9 @@ export default defineConfig(({ mode }) => {
           '@': path.resolve(__dirname, '.'),
         }
       },
-	  server: {
-		host: '0.0.0.0',
-	  },
+      server: {
+        host: '0.0.0.0',
+        allowedHosts: ['past-forward.onrender.com'],
+      },
     };
 });
